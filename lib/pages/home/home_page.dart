@@ -98,21 +98,21 @@ class HomePage extends StatelessWidget {
                           GridView.count(
                             crossAxisCount: columns,
                             shrinkWrap: true,
-                            crossAxisSpacing: 12,
-                            mainAxisSpacing: 12,
+                            crossAxisSpacing: 16,
+                            mainAxisSpacing: 16,
+                            childAspectRatio: columns == 2 ? 1.35 : 1.08,
                             physics: const NeverScrollableScrollPhysics(),
                             children: [
                               VehicleCard(
-                                name: 'Toyota Corolla',
+                                name: 'Toyota Platz',
                                 transmission: 'Manual Transmission',
                                 imageUrl:
-                                  'assets/images/20260623_163958.jpg',
+                                    'assets/images/lv_0_20251227133736.jpg',
                               ),
                               VehicleCard(
-                                name: 'Nissan March',
+                                name: 'Toyota Vitz',
                                 transmission: 'Automatic Transmission',
-                                imageUrl:
-                                  'assets/images/20260515_150017.jpg',
+                                imageUrl: 'assets/images/20260623_163958.jpg',
                               ),
                             ],
                           ),
@@ -144,27 +144,13 @@ class HomePage extends StatelessWidget {
                           const SizedBox(height: 12),
                           const GalleryGrid(
                             images: [
-                              'assets/images/20251227_123810.jpg',
-                              'assets/images/20251227_123915.jpg',
-                              'assets/images/20251227_124038.jpg',
-                              'assets/images/20251227_124050.jpg',
                               'assets/images/20260515_150017.jpg',
                               'assets/images/20260623_163958.jpg',
                               'assets/images/20260623_164029.jpg',
-                              'assets/images/20260623_164044.jpg',
-                              'assets/images/20260623_164101.jpg',
-                              'assets/images/20260623_165244.jpg',
                               'assets/images/20260625_145351.jpg',
                               'assets/images/lv_0_20251227133736.jpg',
-                              'assets/images/lv_0_20251227134136.jpg',
+                              'assets/images/20251227_124050.jpg',
                             ],
-                          ),
-
-                          const SizedBox(height: 24),
-                          const SectionTitle(title: 'FAQ'),
-                          const SizedBox(height: 12),
-                          const Text(
-                            'Common questions answered — see the FAQ page for more.',
                           ),
 
                           const SizedBox(height: 48),

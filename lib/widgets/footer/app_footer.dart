@@ -160,8 +160,11 @@ class AppFooter extends StatelessWidget {
                     ),
                   ],
                 )
-              : Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              : Wrap(
+                  alignment: WrapAlignment.spaceBetween,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  runSpacing: 12,
+                  spacing: 16,
                   children: [
                     Text(
                       '© 2024 ${AppConstants.schoolName}. All rights reserved.',
@@ -171,33 +174,30 @@ class AppFooter extends StatelessWidget {
                         color: Colors.white.withAlpha(200),
                       ),
                     ),
-                    const SizedBox(height: 16),
-                    Row(
+                    Wrap(
+                      spacing: 12,
+                      runSpacing: 12,
                       children: [
                         _SocialIcon(
                           icon: FontAwesomeIcons.facebook,
                           url: '/contact',
                           color: const Color(0xFF1877F2),
                         ),
-                        const SizedBox(width: 12),
                         _SocialIcon(
                           icon: FontAwesomeIcons.instagram,
                           url: '/contact',
                           color: const Color(0xFFE4405F),
                         ),
-                        const SizedBox(width: 12),
                         _SocialIcon(
                           icon: FontAwesomeIcons.tiktok,
                           url: '/contact',
                           color: Colors.black,
                         ),
-                        const SizedBox(width: 12),
                         _SocialIcon(
                           icon: FontAwesomeIcons.linkedin,
                           url: '/contact',
                           color: const Color.fromARGB(255, 35, 108, 203),
                         ),
-                        const SizedBox(width: 12),
                         _SocialIcon(
                           icon: FontAwesomeIcons.xTwitter,
                           url: '/contact',
@@ -205,7 +205,6 @@ class AppFooter extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(width: 20),
                   ],
                 ),
         ],

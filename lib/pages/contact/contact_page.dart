@@ -438,8 +438,8 @@ class _ContactPageState extends State<ContactPage> {
   }
 
   Widget _buildMapSection(bool isMobile) {
-    final lat = 0.3550620863638853;
-    final lng = 32.59845464953972;
+    final lat = 0.310149584128037;
+    final lng = 32.61073172384297;
     final mapsUrl = 'https://maps.google.com/?q=$lat,$lng';
 
     return Column(
