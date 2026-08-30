@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Mulongo Driving School Kampala has helped learners build safe, confident driving skills since 2007. Learn manual, automatic, beginner and refresher driving.">
+  <meta name="keywords" content="driving school Kampala, driving lessons Kampala, learn to drive Uganda, manual driving lessons, automatic driving lessons, Mulongo Driving School">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="author" content="Mulongo Driving School">
+  <meta name="theme-color" content="#0066CC">
+  <link rel="canonical" href="https://mulongodrivingskul.web.app/">
+
+  <!-- Link preview metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mulongo Driving School">
+  <meta property="og:url" content="https://mulongodrivingskul.web.app/">
+  <meta property="og:title" content="Mulongo Driving School Kampala | Learn to Drive with Confidence">
+  <meta property="og:description" content="Build safe, confident driving skills with Mulongo Driving School Kampala. Learning to drive since 2007.">
+  <meta property="og:image" content="https://mulongodrivingskul.web.app/icons/logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Mulongo Driving School logo">
+  <meta property="og:locale" content="en_UG">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mulongo Driving School Kampala | Learn to Drive with Confidence">
+  <meta name="twitter:description" content="Build safe, confident driving skills with Mulongo Driving School Kampala. Learning to drive since 2007.">
+  <meta name="twitter:image" content="https://mulongodrivingskul.web.app/icons/logo.png">
+  <meta name="twitter:image:alt" content="Mulongo Driving School logo">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DrivingSchool",
+      "@id": "https://mulongodrivingskul.web.app/#driving-school",
+      "name": "Mulongo Driving School",
+      "url": "https://mulongodrivingskul.web.app/",
+      "logo": "https://mulongodrivingskul.web.app/icons/logo.png",
+      "image": "https://mulongodrivingskul.web.app/icons/logo.png",
+      "description": "Mulongo Driving School Kampala has helped learners build safe, confident driving skills since 2007.",
+      "foundingDate": "2007",
+      "telephone": [
+        "+256776320253",
+        "+256702320253",
+        "+256744531624"
+      ],
+      "email": "mulongodrivingschools1@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kampala",
+        "addressCountry": "UG"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Kampala"
+      },
+      "serviceType": [
+        "Manual driving lessons",
+        "Automatic driving lessons",
+        "Beginner driving lessons",
+        "Refresher driving lessons"
+      ]
+    }
+  </script>
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="mulongo_driving_school">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Mulongo Driving School</title>
+  <link rel="manifest" href="manifest.json">
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js';
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js';
+
+    const firebaseConfig = {
+      apiKey: 'AIzaSyBEd04-FhDn4ZbaXRu_PI30gqoULX-JTC8',
+      authDomain: 'mulongodrivingskul.firebaseapp.com',
+      projectId: 'mulongodrivingskul',
+      storageBucket: 'mulongodrivingskul.firebasestorage.app',
+      messagingSenderId: '919711010525',
+      appId: '1:919711010525:web:477b7edf51f30ba2cdd534',
+      measurementId: 'G-BMJBTEX4G5'
+    };
+
+    const app = initializeApp(firebaseConfig);
+    getAnalytics(app);
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEd04-FhDn4ZbaXRu_PI30gqoULX-JTC8"></script>
+  <style>
+    :root {
+      color-scheme: light;
+      --blue: #172fe5;
+      --orange: #ff5b0a;
+      --ink: #10204b;
+      --mist: #f6f8ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      background: var(--mist);
+      font-family: Georgia, 'Times New Roman', serif;
+    }
+
+    #app-loader {
+      align-items: center;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(255, 255, 255, .96) 0, rgba(255, 255, 255, .72) 28%, transparent 58%),
+        linear-gradient(135deg, #eef1ff 0%, #fff8f3 52%, #f5f7ff 100%);
+      display: flex;
+      inset: 0;
+      justify-content: center;
+      opacity: 1;
+      overflow: hidden;
+      position: fixed;
+      transition: opacity .55s ease, visibility .55s ease;
+      visibility: visible;
+      z-index: 9999;
+    }
+
+    #app-loader::before,
+    #app-loader::after {
+      border: 1px solid rgba(23, 47, 229, .1);
+      border-radius: 50%;
+      content: '';
+      height: min(82vw, 540px);
+      position: absolute;
+      width: min(82vw, 540px);
+    }
+
+    #app-loader::after {
+      border-color: rgba(255, 91, 10, .13);
+      height: min(105vw, 700px);
+      width: min(105vw, 700px);
+    }
+
+    #app-loader.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    .loader-content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .loader-logo {
+      animation: logo-in .8s cubic-bezier(.2, .8, .2, 1) both;
+      filter: drop-shadow(0 16px 22px rgba(16, 32, 75, .14));
+      height: clamp(150px, 27vw, 250px);
+      object-fit: contain;
+      width: clamp(150px, 27vw, 250px);
+    }
+
+    .loader-title {
+      color: var(--ink);
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      font-weight: 700;
+      letter-spacing: .02em;
+      margin: 18px 0 5px;
+    }
+
+    .loader-subtitle {
+      color: #65708d;
+      font-family: Arial, sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      margin: 0 0 25px;
+      text-transform: uppercase;
+    }
+
+    .loader-track {
+      background: rgba(23, 47, 229, .13);
+      border-radius: 10px;
+      height: 4px;
+      overflow: hidden;
+      width: min(180px, 48vw);
+    }
+
+    .loader-progress {
+      animation: loading 1.45s ease-in-out infinite;
+      background: linear-gradient(90deg, var(--blue), var(--orange));
+      border-radius: inherit;
+      height: 100%;
+      transform: translateX(-100%);
+      width: 100%;
+    }
+
+    @keyframes logo-in {
+      from { opacity: 0; transform: translateY(12px) scale(.94); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes loading {
+      0% { transform: translateX(-100%); }
+      55%, 100% { transform: translateX(100%); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .loader-logo,
+      .loader-progress { animation: none; }
+      .loader-progress { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <div id="app-loader" role="status" aria-live="polite" aria-label="Loading Mulongo Driving School">
+    <div class="loader-content">
+      <img class="loader-logo" src="icons/logo.png" alt="Mulongo Driving School logo">
+      <p class="loader-title">Mulongo Driving School</p>
+      <p class="loader-subtitle">Your partner in professional driving</p>
+      <div class="loader-track" aria-hidden="true">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    (function () {
+      var loader = document.getElementById('app-loader');
+      var observer = new MutationObserver(function () {
+        if (document.querySelector('flt-glass-pane, flutter-view, canvas')) {
+          loader.classList.add('is-hidden');
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(document.body, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>
