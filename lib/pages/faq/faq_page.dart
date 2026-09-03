@@ -40,7 +40,7 @@ class FaqPage extends StatelessWidget {
                       'You can register by contacting us through:\n'
                       '• Phone: +256 776 320253\n'
                       '• WhatsApp: +256 776 320253\n'
-                      '• Email: mulongodrivingschool1@gmail.com\n'
+                      '• Email: mulongodrivingschools1@gmail.com\n'
                       '• Visit our contact page and fill out the form\n\n'
                       'Our team will confirm your enrollment and schedule your first lesson.',
                     ),
@@ -66,7 +66,7 @@ class FaqPage extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Text(
-                      'For beginners, a learner\'s permit is not required to start lessons. However, you will need one to legally practice on public roads. We can guide you through the process.',
+                      'For beginners, a learner\'s permit is required to legally practice on public roads. We can guide you through the process.',
                     ),
                   ),
                 ],
@@ -146,7 +146,7 @@ class FaqPage extends StatelessWidget {
                     child: Text(
                       'Pricing is competitive and affordable. For detailed pricing:\n'
                       '• Contact us via phone or WhatsApp\n'
-                      '• Email: mulongodrivingschool1@gmail.com\n\n'
+                      '• Email: mulongodrivingschools1@gmail.com\n\n'
                       'We offer package discounts for bulk lesson bookings.',
                     ),
                   ),
@@ -380,7 +380,7 @@ class FaqPage extends StatelessWidget {
                       'We\'re here to help! Contact us:\n'
                       '• Phone: +256 776 320253\n'
                       '• WhatsApp: +256 776 320253\n'
-                      '• Email: mulongodrivingschool1@gmail.com\n'
+                      '• Email: mulongodrivingschools1@gmail.com\n'
                       '• Visit our contact page\n\n'
                       'Our team is happy to answer any questions.',
                     ),

@@ -68,7 +68,7 @@ class PrivacyPage extends StatelessWidget {
       title: 'Contact Us',
       icon: '📞',
       content:
-          'If you have any questions about this Privacy Policy, please contact us at: \nPhone: +256 776 320253\nEmail: mulongodrivingschool1@gmail.com\nAddress: Uganda',
+          'If you have any questions about this Privacy Policy, please contact us at: \nPhone: +256 776 320253\nEmail: mulongodrivingschools1@gmail.com\nAddress: Uganda',
     ),
   ];
 
